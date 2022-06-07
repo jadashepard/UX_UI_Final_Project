@@ -1,0 +1,42 @@
+/* COLORS
+    Primary
+    orange: #F78C25
+    yellow: #F5B514
+    dark grey: #333333
+    teal: #27888C
+    Secondary
+    white: #FFFFFF
+    light grey: #D3D3D3
+    grey: #808080
+    black: #000000
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero-image{
+    background-image: url("images/DemonSlayer_hero.jpeg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+.card-section{
+    display: flex;  
+    margin: 30px auto;
+    padding: 15px;
+}
+.card-section .card{
+    margin: 15px;
+}
+/* FLEXBOX */
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+}
+.left, .right {
+    text-align: left;
+}
