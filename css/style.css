@@ -13,14 +13,19 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
-.hero-image{
-    background-image: url("images/DemonSlayer_hero.jpeg");
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: blue;
+ul{
+    list-style: none;
+}
+#hero{
+    width: 100%;
+}
+.hero-title{
+    color: white;
+    background-color: #D3D3D3;
+    position: absolute;
+    bottom: 8px;
 }
 .card-section{
     display: flex;  
