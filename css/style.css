@@ -33,14 +33,19 @@ ul{
     padding: 15px;
 }
 .card-section .card{
+    flex: 0 0 auto;
     margin: 15px;
 }
 /* FLEXBOX */
+.flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .flex-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 35px;
+    margin: 15px;
 }
 .left, .right {
     text-align: left;
