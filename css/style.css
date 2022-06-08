@@ -13,19 +13,38 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #000000;
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+/* H1 - P*/
+h1{
+    font-size: 48px;
+    font-style: bold;
+}
+p{
+    font-size: 24px;
 }
 ul{
     list-style: none;
 }
-#hero{
-    width: 100%;
-}
-.hero-title{
+button{
+    background-color: #F78C25;
+    border: none;
+    font-size: 20px;
+    font-style: bold;
     color: white;
-    background-color: #D3D3D3;
+    border-radius: 8px;
+    padding: 5px 20px;
+}
+/* HERO */
+.hero-title{
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    bottom: 8px;
+    padding: 10px;
+    left: 5%;
+    bottom: 25%;
 }
 .card-section{
     display: flex;  
