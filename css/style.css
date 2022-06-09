@@ -13,6 +13,10 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: white;
 }
 /* H1 - P*/
 h1{
@@ -88,6 +92,10 @@ button{
  .topnav .icon {
     display: none;
   }
+footer{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
+}
 /* HERO */
 .hero-title{
     background-color: rgba(0, 0, 0, 0.5);
@@ -105,6 +113,12 @@ button{
     flex: 0 0 auto;
     margin: 15px;
 }
+
+.card{
+background-color: #F78C25;
+
+}
+
 /* FLEXBOX */
 .flexbox{
     display: flex;
@@ -118,4 +132,8 @@ button{
 }
 .left, .right {
     text-align: left;
+}
+
+#icon{
+    color:white;
 }
