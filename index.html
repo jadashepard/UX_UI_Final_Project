@@ -8,8 +8,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!--Javascript-->
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
         <!--BOOTSTRAP CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!--CSS-->
@@ -19,48 +22,41 @@
         </title>
     </head>
     <body>
-        <header>
-          <!--navigation-->
-            <div class="navigation">
-                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Crunchyroll</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">SHOWS <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">MOVIES</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">MANGA</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">NEWS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">STORE</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-            </div>
-        </header>
-        <!--hero section-->
-        <section id="hero">
-          <img src="images/DemonSlayer_hero.jpeg" alt="Demon Slayer Cover Art" style="width:100%">
-            <div class="hero-title">
-                <ul>
-                    <h1><li>Demon Slayer: Kimetsu no Yaiba</li></h1>
-                    <p><li>After a demon attack leaves his family slain and his sister cursed, Tanjiro embarks upon a perilous journey to find a cure and avenge those he's lost.
-                    </li></p>
-                    <button>Start Watching</button>
-                </ul>
-            </div>
-        </section>
+      <header>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav" id="myTopnav">
+          <div class="left-links">
+            <a href="#crunchyroll" class="links logo">Crunchyroll</a>
+            <a href="#shows" class="links selected">SHOWS</a>
+            <a href="#movies" class="links">MOVIES</a>
+            <a href="#MANGA" class="links">MANGA</a>
+            <a href="#news" class="links">NEWS</a>
+            <a href="#STORE" class="links">STORE</a>
+          </div>
+          <div class="right-links">
+            <p class="links">search icon here</p>
+            <p class="links">question mark</p>
+            <p class="links">avatar</p>
+          </div>
+          <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+      <!--hero section-->
+      <section id="hero">
+        <img src="images/DemonSlayer_hero.jpeg" alt="Demon Slayer Cover Art" style="width:100%">
+          <div class="hero-title">
+              <ul>
+                  <h1><li>Demon Slayer: Kimetsu no Yaiba</li></h1>
+                  <p><li>After a demon attack leaves his family slain and his sister cursed, Tanjiro embarks upon a perilous journey to find a cure and avenge those he's lost.
+                  </li></p>
+                  <button>Start Watching</button>
+              </ul>
+          </div>
+      </section>
+  
         <!--Show Categories-->
         <section class="card-section">
           <div class="container">
