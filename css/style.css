@@ -38,6 +38,11 @@ button{
     border-radius: 8px;
     padding: 5px 20px;
 }
+
+footer{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
+}
 /* HERO */
 .hero-title{
     background-color: rgba(0, 0, 0, 0.5);
