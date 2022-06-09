@@ -55,6 +55,15 @@ button{
     flex: 0 0 auto;
     margin: 15px;
 }
+
+.card{
+background-color: #F78C25;
+
+}
+.card-text{
+
+}
+
 /* FLEXBOX */
 .flexbox{
     display: flex;
