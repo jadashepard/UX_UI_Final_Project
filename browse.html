@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--Javascript-->
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/bbb74cc9c9.js" crossorigin="anonymous"></script>
+      
+        <!--BOOTSTRAP CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>
+            Crunchyroll| Browse
+        </title>
+    </head>
+    
+    <body>
+      <header>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="logo"><img src="images/crunchyroll_logo.png"></a>
+          <div class="left-links"> 
+            <a href="browse.html" class="links selected lined">SHOWS</a>
+            <a href="#movies" class="links lined">MOVIES</a>
+            <a href="#MANGA" class="links lined">MANGA</a>
+            <a href="#news" class="links lined">NEWS</a>
+            <a href="#STORE" class="links lined">STORE</a>
+          </div>
+          <div class="right-links">
+            <a href="#" class="links"><i class="fa-solid fa-magnifying-glass" id="icon"></i></a>
+            <a href="#" class="links"><i class="fa-solid fa-circle-question" id="icon"></i></a>
+            <div class="dropdown links">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/Avatar.png">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">CRUNCHYLISTS</a>
+                <a class="dropdown-item" href="#">HISTORY</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="myAccount.html"> MY ACCOUNT</a>
+                <a class="dropdown-item" href="#">LEAVE FEEDBACK</a>
+                <a class="dropdown-item" href="#">LOGOUT</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+       <!--Hero Image-->
+       <section id="hero">
+        <img src="images/image 36.png" alt="Princess Crunchyroll Excited" style="width:100%">
+          <div class="hero-title">
+          </div>
+      </section>
+      
+      <!--breadcrumbs-->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Browse</li>
+        </ol>
+      </nav>
+      <!--Search Filter-->
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Genre
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Adventure</a>
+            <a class="dropdown-item" href="#">Comedy</a>
+            <a class="dropdown-item" href="#">Drama</a>
+            <a class="dropdown-item" href="#">Fantasy</a>
+            <a class="dropdown-item" href="#">Music</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Sci-Fi</a>
+            <a class="dropdown-item" href="#">Seinen</a>
+            <a class="dropdown-item" href="#">Shojo</a>
+            <a class="dropdown-item" href="#">Shonen</a>
+            <a class="dropdown-item" href="#">Slice of Life</a>
+            <a class="dropdown-item" href="#">Sports</a>
+            <a class="dropdown-item" href="#">Supernatural</a>
+            <a class="dropdown-item" href="#">Thiller</a>
+          </div>
+        </div>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Theme
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Adventure</a>
+              <a class="dropdown-item" href="#">Comedy</a>
+              <a class="dropdown-item" href="#">Drama</a>
+              <a class="dropdown-item" href="#">Fantasy</a>
+              <a class="dropdown-item" href="#">Historical</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+        </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Year
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Status
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Language
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+      </div>
+      
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!-- Section: Links -->
+            <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Navigation</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                    <a href="#!" class="text-white">Browse Popular</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Browse Simulcasts</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Browse Manga</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Release Calendar</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Originals</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">News</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Forums</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Store</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Games</a>
+                    </li>
+
+                </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Connect With Us</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                    <a href="#" class="fa fa-youtube" id="icon"></a>
+                    <a href="#!" class="text-white">YouTube</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fa fa-facebook" id="icon"></a>
+                    <a href="#!" class="text-white">Facebook</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fa fa-twitter" id="icon"></a>
+                    <a href="#!" class="text-white">Twitter</a>
+                    </li>
+                    <li>
+                    <a href="#" class="fa fa-instagram" id="icon"></a>
+                    <a href="#!" class="text-white">Instagram</a>
+                    </li>
+                </ul>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Crunchyroll</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                    <a href="#!" class="text-white">Start a Free Trial</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">About</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Help/FAQ</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Terms of Use</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Privacy Policy</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Press Inquiries</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Get the Apps</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Redeem Gift Card</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Career Center</a>
+                    </li>
+                </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Account</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                    <a href="#!" class="text-white">Watchlist</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Crunchylists</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">History</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">My Account</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Leave Feedback</a>
+                    </li>
+                    <li>
+                    <a href="#!" class="text-white">Log Out</a>
+                    </li>
+                </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <!-- THE BELOW SCRIPT TAGS ARE REQUIRED FOR CERTAIN COMPONENTS IN BOOTSTRAP -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
