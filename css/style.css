@@ -26,7 +26,6 @@ h1{
 h2{
     font-size: 36px;
     font-style: bold;
-    color: black;
 }
 h3{
     font-size: 28px;
@@ -129,6 +128,9 @@ footer{
 .card-section .card{
     flex: 0 0 auto;
     margin: 15px;
+}
+.card-section .row{
+    flex-wrap: nowrap;
 }
 
 .card{
