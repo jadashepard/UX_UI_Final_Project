@@ -23,8 +23,18 @@ h1{
     font-size: 48px;
     font-style: bold;
 }
+h2{
+    font-size: 36px;
+    font-style: bold;
+}
+h3{
+    font-size: 28px;
+    font-style: normal;
+    color: black;
+}
 p{
     font-size: 24px;
+    font-style: normal;
 }
 ul{
     list-style: none;
@@ -38,6 +48,7 @@ button{
     border-radius: 8px;
     padding: 5px 20px;
 }
+
 #icon{
     color: white;
 }
@@ -87,16 +98,20 @@ button{
     border-bottom: 2px solid white;
  }
  .selected{
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
  }
  .topnav .icon {
     display: none;
-  }
+}
+
 footer{
     background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
 }
 /* HERO */
+#hero{
+    z-index: -1;
+}
 .hero-title{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -104,6 +119,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba
     left: 5%;
     bottom: 25%;
 }
+/* CARDS */ 
 .card-section{
     display: flex;  
     margin: 30px auto;
@@ -113,27 +129,65 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba
     flex: 0 0 auto;
     margin: 15px;
 }
+.card-section .row{
+    flex-wrap: nowrap;
+}
 
 .card{
 background-color: #F78C25;
-
+width: 200px;
+height: 352;
 }
-
-/* FLEXBOX */
-.flexbox{
-    display: flex;
-    flex-wrap: nowrap;
+.card img{
+    width: inherit;
+    height: 266px;
+    object-fit: cover;
 }
-.flex-container{
-    display: flex;
-    justify-content: space-around;
+.card-text{
+    text-align: center;
+}
+/* SIMULCASTS */ 
+.simulcasts{
+    background-image: url("images/crunchyroll-hime.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 513px;
+    object-fit: cover;
+    background-color: #D3D3D3;
+    padding: 30px 60px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+     "intro card1 card2"
+     "intro card3 card4";
+    gap: 5px;
     align-items: center;
-    margin: 15px;
 }
-.left, .right {
-    text-align: left;
+#intro{
+    grid-area: intro;
+}
+#card1{
+    grid-area: card1;
+    display: inline-block;
+}
+#card2{
+    grid-area: card2;
+    display: inline-block;
+}
+#card3{
+    grid-area: card3;
+    display: inline-block;
+}
+#card4{
+    grid-area: card4;
+    display: inline-block;
 }
 
-#icon{
-    color:white;
+/* myAccount */ 
+.accountBackground{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(41,107,112,1) 33%, rgba(42,63,71,1) 57%, rgba(236,110,19,1) 100%);
 }
