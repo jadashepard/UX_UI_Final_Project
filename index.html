@@ -13,6 +13,17 @@
         <script src="js/index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/bbb74cc9c9.js" crossorigin="anonymous"></script>
+
+        <!--GOOGLE ANALYTICS-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHGSF9M444"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GHGSF9M444');
+        </script>
       
         <!--BOOTSTRAP CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,19 +39,30 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
         <div class="topnav" id="myTopnav">
-          <a href="index.html" class="links logo">Crunchyroll</a>
-          <div class="left-links">
-            <a href="#crunchyroll" class="logo"><img src="images/crunchyroll_logo.png"></a>
-            <a href="browse.html" class="links selected">SHOWS</a>
-            <a href="#movies" class="links">MOVIES</a>
-            <a href="#MANGA" class="links">MANGA</a>
-            <a href="#news" class="links">NEWS</a>
-            <a href="#STORE" class="links">STORE</a>
+          <a href="index.html" class="logo"><img src="images/crunchyroll_logo.png"></a>
+          <div class="left-links"> 
+            <a href="browse.html" class="links selected lined">SHOWS</a>
+            <a href="#movies" class="links lined">MOVIES</a>
+            <a href="#MANGA" class="links lined">MANGA</a>
+            <a href="#news" class="links lined">NEWS</a>
+            <a href="#STORE" class="links lined">STORE</a>
           </div>
           <div class="right-links">
             <a href="#" class="links"><i class="fa-solid fa-magnifying-glass" id="icon"></i></a>
             <a href="#" class="links"><i class="fa-solid fa-circle-question" id="icon"></i></a>
-            <a href="#" class="links"><p id="icon">avatar</p></a>
+            <div class="dropdown links">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/Avatar.png">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">CRUNCHYLISTS</a>
+                <a class="dropdown-item" href="#">HISTORY</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="myAccount.html"> MY ACCOUNT</a>
+                <a class="dropdown-item" href="#">LEAVE FEEDBACK</a>
+                <a class="dropdown-item" href="#">LOGOUT</a>
+              </div>
+            </div>
           </div>
           <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -48,7 +70,7 @@
         </div>
       </header>
       <!--hero section-->
-      <section id="hero">
+      <section class="hero">
         <img src="images/DemonSlayer_hero.jpeg" alt="Demon Slayer Cover Art" style="width:100%">
           <div class="hero-title">
               <ul>
@@ -66,7 +88,7 @@
             <h2>Popular Series</h2>
                 <div class="row flexbox">
                   <div class="card">
-                    <img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap">
+                    <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
                     <div class="card-body">
                       <p class="card-text">Spy X Family</p>
                       <p class="card-text">Series - Sub|Dub</p>
