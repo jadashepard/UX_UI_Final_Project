@@ -183,3 +183,9 @@ height: 352;
     grid-area: card4;
     display: inline-block;
 }
+
+/* myAccount */ 
+.accountBackground{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(41,107,112,1) 33%, rgba(42,63,71,1) 57%, rgba(236,110,19,1) 100%);
+}
