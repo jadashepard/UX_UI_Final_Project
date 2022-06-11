@@ -32,8 +32,12 @@ h3{
     font-style: normal;
     color: black;
 }
+h4{
+    font-size: 16px;
+    color: #D3D3D3;
+}
 p{
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
 }
 ul{
@@ -81,6 +85,7 @@ button{
     top:0;
     width: 100%;
     padding: 10px 20px 0 20px;
+    align-items: center;
 }
 .left-links{
     flex:1 1 200px;
@@ -109,15 +114,18 @@ footer{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
 }
 /* HERO */
-#hero{
+.hero img{
     z-index: -1;
+    height: 625px;
+    object-fit: cover;
 }
 .hero-title{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     padding: 10px;
     left: 5%;
-    bottom: 25%;
+    right: 40%;
+    bottom: 15%;
 }
 /* CARDS */ 
 .card-section{
@@ -134,12 +142,11 @@ footer{
 }
 
 .card{
-background-color: #F78C25;
-width: 200px;
-height: 352;
+    background-color: #F78C25;
+    width: 200px;
 }
 .card img{
-    width: inherit;
+    width: 200px;
     height: 266px;
     object-fit: cover;
 }
@@ -185,7 +192,36 @@ height: 352;
     grid-area: card4;
     display: inline-block;
 }
-
+/* EPISODE LIST */
+.episodes{
+    margin: 75px;
+}
+.episodes .card{
+    width: 480px;
+}
+.episodes img{
+    width: 480px;
+    height: 270px;
+    object-fit: cover;
+}
+.episodes .card-text{
+    text-align: left;
+}
+/* REVIEWS */ 
+.reviews{
+    margin: 75px;
+}
+.reviews .user{
+    align-items: center;
+}
+.reviews .avatar{
+    display: inline-block; 
+    margin: 10px 20px 10px 0;
+}
+.reviews img{
+    width: 72px;
+    height: 72px;
+}
 /* myAccount */ 
 .accountBackground{
     background: rgb(34,193,195);
