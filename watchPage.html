@@ -28,24 +28,36 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
         <div class="topnav" id="myTopnav">
-            <a href="index.html" class="logo"><img src="images/crunchyroll_logo.png"></a>
-            <div class="left-links">
-                <a href="browse.html" class="links selected">SHOWS</a>
-                <a href="#movies" class="links">MOVIES</a>
-                <a href="#MANGA" class="links">MANGA</a>
-                <a href="#news" class="links">NEWS</a>
-                <a href="#STORE" class="links">STORE</a>
+          <a href="index.html" class="logo"><img src="images/crunchyroll_logo.png"></a>
+          <div class="left-links"> 
+            <a href="browse.html" class="links selected lined">SHOWS</a>
+            <a href="#movies" class="links lined">MOVIES</a>
+            <a href="#MANGA" class="links lined">MANGA</a>
+            <a href="#news" class="links lined">NEWS</a>
+            <a href="#STORE" class="links lined">STORE</a>
+          </div>
+          <div class="right-links">
+            <a href="#" class="links"><i class="fa-solid fa-magnifying-glass" id="icon"></i></a>
+            <a href="#" class="links"><i class="fa-solid fa-circle-question" id="icon"></i></a>
+            <div class="dropdown links">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/Avatar.png">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">CRUNCHYLISTS</a>
+                <a class="dropdown-item" href="#">HISTORY</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="myAccount.html"> MY ACCOUNT</a>
+                <a class="dropdown-item" href="#">LEAVE FEEDBACK</a>
+                <a class="dropdown-item" href="#">LOGOUT</a>
+              </div>
             </div>
-            <div class="right-links">
-                <a href="#" class="links"><i class="fa-solid fa-magnifying-glass" id="icon"></i></a>
-                <a href="#" class="links"><i class="fa-solid fa-circle-question" id="icon"></i></a>
-                <a href="#" class="links"><p id="icon">avatar</p></a>
-            </div>
-            <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            </div>
-        </header>
+          </div>
+          <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
         <section class="hero">
             <img src="images/spyxfamily-hero.png" alt="Spy X Family" style="width:100%">
             <div class="hero-title">
