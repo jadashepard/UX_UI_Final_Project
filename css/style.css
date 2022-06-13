@@ -81,11 +81,12 @@ button{
     background-color: #333;
     overflow: hidden;
     display: flex;
-    position: sticky;
+    position: relative;
     top:0;
     width: 100%;
     padding: 10px 20px 0 20px;
     align-items: center;
+    z-index: 1;
 }
 .left-links{
     flex:1 1 200px;
@@ -99,7 +100,7 @@ button{
     font-size: 16px;
     font-weight: bold;
  }
- .links:hover {
+ .lined:hover {
     border-bottom: 2px solid white;
  }
  .selected{
@@ -114,7 +115,8 @@ footer{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
 }
 /* HERO */
-.hero img{
+.hero{
+    position: relative;
     z-index: -1;
     height: 625px;
     object-fit: cover;
@@ -145,8 +147,8 @@ footer{
     background-color: #F78C25;
     width: 200px;
 }
-.card img{
-    width: 200px;
+.card-section .card img{
+    width: inherit;
     height: 266px;
     object-fit: cover;
 }
@@ -195,6 +197,11 @@ footer{
 /* EPISODE LIST */
 .episodes{
     margin: 75px;
+}
+/* myAccount */ 
+.accountBackground{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(41,107,112,1) 33%, rgba(42,63,71,1) 57%, rgba(236,110,19,1) 100%);
 }
 .episodes .card{
     width: 480px;
