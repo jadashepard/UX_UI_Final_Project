@@ -32,17 +32,8 @@ h3{
     font-style: normal;
     color: black;
 }
-h5{
-
-        font-size: 36px;
-        font-style: bold;
-        color: white;
-
-    font-size: 16px;
-    color: #D3D3D3;
-}
 p{
-    font-size: 22px;
+    font-size: 24px;
     font-style: normal;
 }
 ul{
@@ -62,11 +53,6 @@ button{
     color: white;
 }
 
-#filter{
-    text-align: center;
-    align-items: center;
-    padding: 50px;
-}
 
 /* NAVIGATION */ 
 @media screen and (max-width: 600px) {
@@ -93,13 +79,10 @@ button{
     background-color: #333;
     overflow: hidden;
     display: flex;
-    position: relative;
+    position: sticky;
     top:0;
     width: 100%;
     padding: 10px 20px 0 20px;
-    align-items: center;
-    z-index: 1;
-    overflow: visible;
 }
 .left-links{
     flex:1 1 200px;
@@ -113,10 +96,10 @@ button{
     font-size: 16px;
     font-weight: bold;
  }
- .lined:hover {
+ .links:hover {
     border-bottom: 2px solid white;
  }
- .selected .lined{
+ .selected{
     border-bottom: 1px solid white;
  }
  .topnav .icon {
@@ -128,19 +111,15 @@ footer{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,108,109,1) 20%, rgba(34,193,195,1) 30%, rgba(34,193,195,1) 70%, rgba(19,108,109,1) 80%, rgba(0,0,0,1) 100%);
 }
 /* HERO */
-.hero img{
-    position: relative;
+#hero{
     z-index: -1;
-    height: 625px;
-    object-fit: cover;
 }
 .hero-title{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     padding: 10px;
     left: 5%;
-    right: 40%;
-    bottom: 15%;
+    bottom: 25%;
 }
 /* CARDS */ 
 .card-section{
@@ -157,11 +136,12 @@ footer{
 }
 
 .card{
-    background-color: #F78C25;
-    width: 200px;
+background-color: #F78C25;
+width: 200px;
+height: 352;
 }
-.card-section .card img{
-    width: 200px;
+.card img{
+    width: inherit;
     height: 266px;
     object-fit: cover;
 }
@@ -170,11 +150,13 @@ footer{
 }
 /* SIMULCASTS */ 
 .simulcasts{
-    background-image: linear-gradient(#000000, #27888C, #000000);
-    padding: 45px 45px 0 45px;
-}
-.simulcasts h3{
-    color: white;
+    background-image: url("images/crunchyroll-hime.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 513px;
+    object-fit: cover;
+    background-color: #D3D3D3;
+    padding: 30px 60px;
 }
 .grid-container{
     display: grid;
@@ -188,7 +170,6 @@ footer{
 }
 #intro{
     grid-area: intro;
-    display: inline-block;
 }
 #card1{
     grid-area: card1;
@@ -206,45 +187,31 @@ footer{
     grid-area: card4;
     display: inline-block;
 }
-/* EPISODE LIST */
-.episodes{
-    margin: 75px;
-}
-.episodes .card{
-    width: 480px;
-}
-.episodes img{
-    width: 480px;
-    height: 270px;
-    object-fit: cover;
-}
-.episodes .card-text{
-    text-align: left;
-}
-/* REVIEWS */ 
-.reviews{
-    margin: 75px;
-}
-.reviews .user{
-    align-items: center;
-}
-.reviews .avatar{
-    display: inline-block; 
-    margin: 10px 20px 10px 0;
-}
-.reviews img{
-    width: 72px;
-    height: 72px;
-}
+
 /* myAccount */ 
-#myAccount{
+.accountBackground{
     background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(41,107,112,1) 33%, rgba(42,63,71,1) 57%, rgba(236,110,19,1) 100%);
 }
+/* Browse Page */
 
-.img-circle{
-        border-radius: 50%;
-        height:200px;
-        width:200px;
-      
+.filter{
+    color:#F78C25;
+    align-items: center;
+    text-align: center;
+}
+
+#card{
+display: flex;
+gap: 2rem;
+align-items: center;
+}
+
+.carousel-inner{
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-bottom: 5%;
+    
 }
