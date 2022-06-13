@@ -23,28 +23,41 @@
     </head>
     
     <body>
-         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <header>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
-         <div class="topnav" id="myTopnav">
-           <a href="index.html" class="links logo">Crunchyroll</a>
-           <div class="left-links">
-             <a href="#shows" class="links selected">SHOWS</a>
-             <a href="#movies" class="links">MOVIES</a>
-             <a href="#MANGA" class="links">MANGA</a>
-             <a href="#news" class="links">NEWS</a>
-             <a href="#STORE" class="links">STORE</a>
-           </div>
-           <div class="right-links">
-             <a href="#" class="links"><i class="fa-solid fa-magnifying-glass" id="icon"></i></a>
-             <a href="#" class="links"><i class="fa-solid fa-circle-question" id="icon"></i></a>
-             <a href="#" class="links"><p id="icon">avatar</p></a>
-           </div>
-           <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
-             <i class="fa fa-bars"></i>
-           </a>
-         </div>
-       </header>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="logo"><img src="images/crunchyroll_logo.png"></a>
+          <div class="left-links"> 
+            <a href="browse.html" class="links selected lined">SHOWS</a>
+            <a href="#movies" class="links lined">MOVIES</a>
+            <a href="#MANGA" class="links lined">MANGA</a>
+            <a href="#news" class="links lined">NEWS</a>
+            <a href="#STORE" class="links lined">STORE</a>
+          </div>
+          <div class="right-links">
+            <a href="#" class="links"><i class="fa-solid fa-magnifying-glass" id="icon"></i></a>
+            <a href="#" class="links"><i class="fa-solid fa-circle-question" id="icon"></i></a>
+            <div class="dropdown links">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/Avatar.png">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">CRUNCHYLISTS</a>
+                <a class="dropdown-item" href="#">HISTORY</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="myAccount.html"> MY ACCOUNT</a>
+                <a class="dropdown-item" href="#">LEAVE FEEDBACK</a>
+                <a class="dropdown-item" href="#">LOGOUT</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
        <!--Hero Image-->
        <section id="hero">
         <img src="images/image 36.png" alt="Princess Crunchyroll Excited" style="width:100%">
@@ -59,8 +72,522 @@
           <li class="breadcrumb-item active" aria-current="page">Browse</li>
         </ol>
       </nav>
-      
+      <!--Search Filter-->
+      <section class="filter" id="filter">    
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genre
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Adventure</a>
+                <a class="dropdown-item" href="#">Comedy</a>
+                <a class="dropdown-item" href="#">Drama</a>
+                <a class="dropdown-item" href="#">Fantasy</a>
+                <a class="dropdown-item" href="#">Music</a>
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Sci-Fi</a>
+                <a class="dropdown-item" href="#">Seinen</a>
+                <a class="dropdown-item" href="#">Shojo</a>
+                <a class="dropdown-item" href="#">Shonen</a>
+                <a class="dropdown-item" href="#">Slice of Life</a>
+                <a class="dropdown-item" href="#">Sports</a>
+                <a class="dropdown-item" href="#">Supernatural</a>
+                <a class="dropdown-item" href="#">Thiller</a>
+            </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Theme
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Adventure</a>
+                <a class="dropdown-item" href="#">Comedy</a>
+                <a class="dropdown-item" href="#">Drama</a>
+                <a class="dropdown-item" href="#">Fantasy</a>
+                <a class="dropdown-item" href="#">Historical</a>
+                <a class="dropdown-item" href="#">Idols</a>
+                <a class="dropdown-item" href="#">Isekai</a>
+                <a class="dropdown-item" href="#">Magical Girl</a>
+                <a class="dropdown-item" href="#">Mecha</a>
+                <a class="dropdown-item" href="#">Music</a>
+                <a class="dropdown-item" href="#">Mystery</a>
+                <a class="dropdown-item" href="#">Post-Apocalyptic</a>
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Slice of Life</a>
+                <a class="dropdown-item" href="#">Supernatural</a>
+                </div>
+            </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Year
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">1979-1989</a>
+                        <a class="dropdown-item" href="#">1989-1999</a>
+                        <a class="dropdown-item" href="#">1999-2009</a>
+                        <a class="dropdown-item" href="#">2009-2019</a>
+                        <a class="dropdown-item" href="#">2019-Present</a>
+                    </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Status
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Ongoing</a>
+                <a class="dropdown-item" href="#">Completed</a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Subbed</a>
+                <a class="dropdown-item" href="#">Dubbed</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!--Carosel for Cards experiment-->
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <a href="..." > 
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                  </a>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
 
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>   
+                </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <a href="..." > 
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                  </a>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>   
+                </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <a href="..." > 
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                  </a>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row flexbox" id="card">
+                <div class="card">
+                  <a href="watchPage.html"><img class="card-img-top" src="images/sky x family.PNG" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Spy X Family</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/aoashi.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Aoashi</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/91 days.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">91 Days</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <img class="card-img-top" src="images/goblin slayer.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Goblin Slayer</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="images/berserk.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Berserk</p>
+                    <p class="card-text">Series - Sub|Dub</p>
+                  </div>
+                </div>   
+                </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
 
         <!-- Footer -->
         <footer class="bg-dark text-center text-white">

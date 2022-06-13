@@ -32,12 +32,8 @@ h3{
     font-style: normal;
     color: black;
 }
-h4{
-    font-size: 16px;
-    color: #D3D3D3;
-}
 p{
-    font-size: 22px;
+    font-size: 24px;
     font-style: normal;
 }
 ul{
@@ -56,6 +52,8 @@ button{
 #icon{
     color: white;
 }
+
+
 /* NAVIGATION */ 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -118,16 +116,13 @@ footer{
 .hero{
     position: relative;
     z-index: -1;
-    height: 625px;
-    object-fit: cover;
 }
 .hero-title{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     padding: 10px;
     left: 5%;
-    right: 40%;
-    bottom: 15%;
+    bottom: 25%;
 }
 /* CARDS */ 
 .card-section{
@@ -144,8 +139,9 @@ footer{
 }
 
 .card{
-    background-color: #F78C25;
-    width: 200px;
+background-color: #F78C25;
+width: 200px;
+height: 352;
 }
 .card-section .card img{
     width: inherit;
@@ -233,4 +229,26 @@ footer{
 .accountBackground{
     background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(41,107,112,1) 33%, rgba(42,63,71,1) 57%, rgba(236,110,19,1) 100%);
+}
+/* Browse Page */
+
+.filter{
+    color:#F78C25;
+    align-items: center;
+    text-align: center;
+}
+
+#card{
+display: flex;
+gap: 2rem;
+align-items: center;
+}
+
+.carousel-inner{
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-bottom: 5%;
+    
 }
