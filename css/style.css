@@ -61,6 +61,13 @@ button{
 #icon{
     color: white;
 }
+
+#filter{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+
 /* NAVIGATION */ 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
